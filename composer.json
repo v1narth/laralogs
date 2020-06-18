@@ -1,0 +1,29 @@
+{
+    "name": "v1narth/laralogs",
+    "type": "library",
+    "description": "Model logging library for Laravel.",
+    "keywords": [
+        "laravel"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ben Heimberg",
+            "email": "bnheimberg@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">= 7.4"
+    },
+    "require-dev": {
+        "haydenpierce/class-finder": "^0.4",
+        "laravel/framework": "^7.0",
+        "phpunit/phpunit": "^8.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Vinarth\\Laralog\\": "src/"
+        }
+    }
+}

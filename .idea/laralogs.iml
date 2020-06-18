@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/vendor/laravel/framework" isTestSource="false" packagePrefix="Illuminate" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor/doctrine/inflector/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor/laravel/framework/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor/phpdocumentor/reflection-docblock/tests/unit" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor/phpspec/prophecy/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor/phpoption/phpoption/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor/myclabs/deep-copy/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor/doctrine/inflector/lib" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor/doctrine/instantiator/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor/monolog/monolog/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor/phpunit/phpunit/src" isTestSource="false" packagePrefix="PHPUnit" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor/phpdocumentor/type-resolver/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor/phpunit/phpunit/tests/_files" isTestSource="false" packagePrefix="Foo" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor/dragonmantank/cron-expression/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor/doctrine/instantiator/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor/doctrine/lexer/lib" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor/phpunit/phpunit/tests/_files/namespace" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor/myclabs/deep-copy/fixtures" isTestSource="false" packagePrefix="DeepCopy" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor/phpoption/phpoption/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor/nesbot/carbon" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor/nesbot/carbon/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor/phpspec/prophecy" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor/psr/log" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor/voku/portable-ascii/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor/nesbot/carbon/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor/myclabs/deep-copy/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor/monolog/monolog/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor/vlucas/phpdotenv/src" isTestSource="false" packagePrefix="Dotenv" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor/phpunit/phpunit/tests/unit" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
