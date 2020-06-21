@@ -13,6 +13,7 @@ class CreateLogsTable extends Migration
 			$table->string('column')->nullable();
 			$table->string('previous')->nullable();
 			$table->string('current')->nullable();
+			$table->bigInteger('group_id')->default(0);
 			$table->set('action', ['created', 'updated', 'deleted']);
 
 			$table->timestamp('created_at');

@@ -6,7 +6,6 @@ use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Facades\DB;
 use Tests\TestCase;
 use Tests\Utils\Models\User;
-use V1narth\Versionable\Support\Utils\Models\Log;
 
 class UserTest extends TestCase
 {
@@ -27,6 +26,31 @@ class UserTest extends TestCase
 	public function testVersionEntryOnCreate() {
 		$user = factory(User::class)->create();
 
-		$this->assertCount(1, Log::getVersions($user)->get());
+		$this->assertEquals(1, $user->revisionsCount());
+	}
+
+	public function testVersionEntryOnUpdate() {
+		$user = factory(User::class)->create();
+
+		$user->update([
+			'name' => 'Updated name'
+		]);
+
+		$this->assertEquals(2, $user->revisionsCount());
+	}
+
+	public function testCanRevertToPreviousVersion() {
+		$user = factory(User::class)->create();
+
+		$updatedUser = User::query()->find($user->id);
+
+		/** @var User $updatedUser */
+		$updatedUser->update([
+			'name' => 'Updated name'
+		]);
+
+		$updatedUser->revertVersion();
+
+		$this->assertTrue($updatedUser->name === $user->name);
 	}
 }
