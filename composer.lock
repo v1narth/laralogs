@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8fcc13645839152fb29843a6e389b7d3",
+    "content-hash": "7943084298c3e5f1db9c9d2cf14bdf12",
     "packages": [],
     "packages-dev": [
         {
@@ -395,6 +395,104 @@
             "time": "2020-06-16T20:11:17+00:00"
         },
         {
+            "name": "fzaninotto/faker",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fzaninotto/Faker.git",
+                "reference": "5337ce5261b393937bd7aaebb21020159756a152"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fzaninotto/Faker/zipball/5337ce5261b393937bd7aaebb21020159756a152",
+                "reference": "5337ce5261b393937bd7aaebb21020159756a152",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.3.3 || ^7.0"
+            },
+            "require-dev": {
+                "ext-intl": "*",
+                "phpunit/phpunit": "^4.8.35 || ^5.7",
+                "squizlabs/php_codesniffer": "^2.9.2"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.9-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Faker\\": "src/Faker/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "François Zaninotto"
+                }
+            ],
+            "description": "Faker is a PHP library that generates fake data for you.",
+            "keywords": [
+                "data",
+                "faker",
+                "fixtures"
+            ],
+            "time": "2020-05-11T08:39:57+00:00"
+        },
+        {
+            "name": "hamcrest/hamcrest-php",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/hamcrest/hamcrest-php.git",
+                "reference": "c4312ef926bd2ac2392f2a78c95d7e20ab439027"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/hamcrest/hamcrest-php/zipball/c4312ef926bd2ac2392f2a78c95d7e20ab439027",
+                "reference": "c4312ef926bd2ac2392f2a78c95d7e20ab439027",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.3|^7.0"
+            },
+            "replace": {
+                "cordoval/hamcrest-php": "*",
+                "davedevelopment/hamcrest-php": "*",
+                "kodova/hamcrest-php": "*"
+            },
+            "require-dev": {
+                "phpunit/php-file-iterator": "^1.4",
+                "phpunit/phpunit": "^4.8.36 || ^5.7 || ^6.5 || ^7.0",
+                "satooshi/php-coveralls": "^1.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.1-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "hamcrest"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "This is the PHP port of Hamcrest Matchers",
+            "keywords": [
+                "test"
+            ],
+            "time": "2019-12-27T10:18:06+00:00"
+        },
+        {
             "name": "haydenpierce/class-finder",
             "version": "0.4.2",
             "source": {
@@ -442,12 +540,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "4c61bc3325b7cc01fd02fe16a4add5942c07db03"
+                "reference": "b87233f48da0b4f219adebd851acd22058dfd551"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/4c61bc3325b7cc01fd02fe16a4add5942c07db03",
-                "reference": "4c61bc3325b7cc01fd02fe16a4add5942c07db03",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/b87233f48da0b4f219adebd851acd22058dfd551",
+                "reference": "b87233f48da0b4f219adebd851acd22058dfd551",
                 "shasum": ""
             },
             "require": {
@@ -591,7 +689,60 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2020-06-16T17:05:56+00:00"
+            "time": "2020-06-20T02:46:40+00:00"
+        },
+        {
+            "name": "laravie/query-filter",
+            "version": "1.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravie/query-filter.git",
+                "reference": "3de10b3d4b8ffb44058978da1e0c11324ebc0325"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravie/query-filter/zipball/3de10b3d4b8ffb44058978da1e0c11324ebc0325",
+                "reference": "3de10b3d4b8ffb44058978da1e0c11324ebc0325",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/database": "^5.8 || ^6.0 || ^7.0",
+                "illuminate/support": "^5.8 || ^6.0 || ^7.0",
+                "php": ">=7.2"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.3.1",
+                "orchestra/testbench": "~3.8.5 || ^4.0.1 || ^5.0",
+                "phpunit/phpunit": "^8.4 || ^9.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Laravie\\QueryFilter\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mior Muhammad Zaki",
+                    "email": "crynobone@gmail.com"
+                }
+            ],
+            "description": "Database/Eloquent Query Builder filters for Laravel",
+            "funding": [
+                {
+                    "url": "https://paypal.me/crynobone",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://www.patreon.com/crynobone",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2020-03-16T08:35:07+00:00"
         },
         {
             "name": "league/commonmark",
@@ -599,12 +750,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/commonmark.git",
-                "reference": "7e3c56becfac42da55822d4ab00f6f2844ed36b5"
+                "reference": "bd34d0e3dd9a5f7c4bbaaf931536b22d35fe5d6c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/commonmark/zipball/7e3c56becfac42da55822d4ab00f6f2844ed36b5",
-                "reference": "7e3c56becfac42da55822d4ab00f6f2844ed36b5",
+                "url": "https://api.github.com/repos/thephpleague/commonmark/zipball/bd34d0e3dd9a5f7c4bbaaf931536b22d35fe5d6c",
+                "reference": "bd34d0e3dd9a5f7c4bbaaf931536b22d35fe5d6c",
                 "shasum": ""
             },
             "require": {
@@ -686,7 +837,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-06-17T12:37:56+00:00"
+            "time": "2020-06-20T13:02:03+00:00"
         },
         {
             "name": "league/flysystem",
@@ -777,6 +928,74 @@
                 }
             ],
             "time": "2020-05-18T15:13:39+00:00"
+        },
+        {
+            "name": "mockery/mockery",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mockery/mockery.git",
+                "reference": "bebae3d74f7b843fe006124f14d2fc8207c8ae9f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mockery/mockery/zipball/bebae3d74f7b843fe006124f14d2fc8207c8ae9f",
+                "reference": "bebae3d74f7b843fe006124f14d2fc8207c8ae9f",
+                "shasum": ""
+            },
+            "require": {
+                "hamcrest/hamcrest-php": "~2.0",
+                "lib-pcre": ">=7.0",
+                "php": "^7.3.0"
+            },
+            "conflict": {
+                "phpunit/phpunit": "<8.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^8.0.0 || ^9.0.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.4.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Mockery": "library/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Pádraic Brady",
+                    "email": "padraic.brady@gmail.com",
+                    "homepage": "http://blog.astrumfutura.com"
+                },
+                {
+                    "name": "Dave Marshall",
+                    "email": "dave.marshall@atstsolutions.co.uk",
+                    "homepage": "http://davedevelopment.co.uk"
+                }
+            ],
+            "description": "Mockery is a simple yet flexible PHP mock object framework",
+            "homepage": "https://github.com/mockery/mockery",
+            "keywords": [
+                "BDD",
+                "TDD",
+                "library",
+                "mock",
+                "mock objects",
+                "mockery",
+                "stub",
+                "test",
+                "test double",
+                "testing"
+            ],
+            "time": "2020-06-09T14:28:50+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -929,12 +1148,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/briannesbitt/Carbon.git",
-                "reference": "fd09016bfe23c1603181c1e7a3eed7efe4dc1a17"
+                "reference": "f9996ce839fb6e9b286f713acbf837134019f9f8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/fd09016bfe23c1603181c1e7a3eed7efe4dc1a17",
-                "reference": "fd09016bfe23c1603181c1e7a3eed7efe4dc1a17",
+                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/f9996ce839fb6e9b286f713acbf837134019f9f8",
+                "reference": "f9996ce839fb6e9b286f713acbf837134019f9f8",
                 "shasum": ""
             },
             "require": {
@@ -1004,7 +1223,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-06-17T12:59:01+00:00"
+            "time": "2020-06-17T19:29:29+00:00"
         },
         {
             "name": "opis/closure",
@@ -1066,6 +1285,207 @@
                 "serialize"
             ],
             "time": "2020-06-17T14:59:55+00:00"
+        },
+        {
+            "name": "orchestra/database",
+            "version": "5.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/orchestral/database.git",
+                "reference": "5d54bd1013e5b944dee3259ddd630a2b7e1f1a4e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/orchestral/database/zipball/5d54bd1013e5b944dee3259ddd630a2b7e1f1a4e",
+                "reference": "5d54bd1013e5b944dee3259ddd630a2b7e1f1a4e",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/contracts": "^7.0",
+                "illuminate/database": "^7.0",
+                "illuminate/support": "^7.0",
+                "laravie/query-filter": "^1.6.1",
+                "php": ">=7.2"
+            },
+            "suggest": {
+                "laravie/query-filter": "Allow to use whereLike query builder macros with Laravel (^1.5)."
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "6.0-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Orchestra\\Database\\CachableQueryServiceProvider",
+                        "Orchestra\\Database\\SearchServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Orchestra\\Database\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylorotwell@gmail.com",
+                    "homepage": "https://github.com/taylorotwell"
+                },
+                {
+                    "name": "Mior Muhammad Zaki",
+                    "email": "crynobone@gmail.com",
+                    "homepage": "https://github.com/crynobone"
+                }
+            ],
+            "description": "Database Component for Orchestra Platform",
+            "keywords": [
+                "database",
+                "orchestra-platform",
+                "orchestral"
+            ],
+            "time": "2020-04-02T07:22:25+00:00"
+        },
+        {
+            "name": "orchestra/testbench",
+            "version": "5.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/orchestral/testbench.git",
+                "reference": "57129325ae77e9e3fa6a577b4c3544398af1620e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/orchestral/testbench/zipball/57129325ae77e9e3fa6a577b4c3544398af1620e",
+                "reference": "57129325ae77e9e3fa6a577b4c3544398af1620e",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": "^7.10",
+                "mockery/mockery": "^1.3.1",
+                "orchestra/testbench-core": "^5.1.4",
+                "php": ">=7.2.5",
+                "phpunit/phpunit": "^8.4 || ^9.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "6.0-dev"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mior Muhammad Zaki",
+                    "email": "crynobone@gmail.com",
+                    "homepage": "https://github.com/crynobone"
+                }
+            ],
+            "description": "Laravel Testing Helper for Packages Development",
+            "homepage": "http://orchestraplatform.com/docs/latest/components/testbench/",
+            "keywords": [
+                "BDD",
+                "TDD",
+                "laravel",
+                "orchestra-platform",
+                "orchestral",
+                "testing"
+            ],
+            "funding": [
+                {
+                    "url": "https://paypal.me/crynobone",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://www.patreon.com/crynobone",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2020-05-30T01:04:58+00:00"
+        },
+        {
+            "name": "orchestra/testbench-core",
+            "version": "5.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/orchestral/testbench-core.git",
+                "reference": "a1f0192445f39e20ab8edb1e27bc232c680fcb7d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/orchestral/testbench-core/zipball/a1f0192445f39e20ab8edb1e27bc232c680fcb7d",
+                "reference": "a1f0192445f39e20ab8edb1e27bc232c680fcb7d",
+                "shasum": ""
+            },
+            "require": {
+                "fzaninotto/faker": "^1.9.1",
+                "php": ">=7.2.5"
+            },
+            "require-dev": {
+                "laravel/framework": "^7.1",
+                "laravel/laravel": "dev-master",
+                "mockery/mockery": "^1.3.1",
+                "orchestra/canvas": "^5.0",
+                "phpunit/phpunit": "^8.4 || ^9.0"
+            },
+            "suggest": {
+                "laravel/framework": "Required for testing (^7.1).",
+                "mockery/mockery": "Allow using Mockery for testing (^1.3.1).",
+                "orchestra/testbench-browser-kit": "Allow using legacy Laravel BrowserKit for testing (^5.0).",
+                "orchestra/testbench-dusk": "Allow using Laravel Dusk for testing (^5.0).",
+                "phpunit/phpunit": "Allow using PHPUnit for testing (^8.4 || ^9.0)."
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "5.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Orchestra\\Testbench\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mior Muhammad Zaki",
+                    "email": "crynobone@gmail.com",
+                    "homepage": "https://github.com/crynobone"
+                }
+            ],
+            "description": "Testing Helper for Laravel Development",
+            "homepage": "http://orchestraplatform.com/docs/latest/components/testbench/",
+            "keywords": [
+                "BDD",
+                "TDD",
+                "laravel",
+                "orchestra-platform",
+                "orchestral",
+                "testing"
+            ],
+            "funding": [
+                {
+                    "url": "https://paypal.me/crynobone",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://www.patreon.com/crynobone",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2020-06-01T04:45:14+00:00"
         },
         {
             "name": "phar-io/manifest",
@@ -1175,12 +1595,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpDocumentor/ReflectionCommon.git",
-                "reference": "985f414b55eca4296ffc99db960a97b3cc8fbcea"
+                "reference": "cf8df60735d98fd18070b7cab0019ba0831e219c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpDocumentor/ReflectionCommon/zipball/985f414b55eca4296ffc99db960a97b3cc8fbcea",
-                "reference": "985f414b55eca4296ffc99db960a97b3cc8fbcea",
+                "url": "https://api.github.com/repos/phpDocumentor/ReflectionCommon/zipball/cf8df60735d98fd18070b7cab0019ba0831e219c",
+                "reference": "cf8df60735d98fd18070b7cab0019ba0831e219c",
                 "shasum": ""
             },
             "require": {
@@ -1216,7 +1636,7 @@
                 "reflection",
                 "static analysis"
             ],
-            "time": "2020-04-27T09:34:19+00:00"
+            "time": "2020-06-19T17:42:03+00:00"
         },
         {
             "name": "phpdocumentor/reflection-docblock",
@@ -1224,12 +1644,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpDocumentor/ReflectionDocBlock.git",
-                "reference": "cd72d394ca794d3466a3b2fc09d5a6c1dc86b47e"
+                "reference": "790426f28bfcbfc1a6f1d59ee8c986edfa45395c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/cd72d394ca794d3466a3b2fc09d5a6c1dc86b47e",
-                "reference": "cd72d394ca794d3466a3b2fc09d5a6c1dc86b47e",
+                "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/790426f28bfcbfc1a6f1d59ee8c986edfa45395c",
+                "reference": "790426f28bfcbfc1a6f1d59ee8c986edfa45395c",
                 "shasum": ""
             },
             "require": {
@@ -1269,7 +1689,7 @@
                 }
             ],
             "description": "With this component, a library can provide support for annotations via DocBlocks or otherwise retrieve information that is embedded in a DocBlock.",
-            "time": "2020-02-22T12:28:44+00:00"
+            "time": "2020-06-19T18:58:43+00:00"
         },
         {
             "name": "phpdocumentor/type-resolver",
@@ -1277,12 +1697,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpDocumentor/TypeResolver.git",
-                "reference": "95d8782070ccd738295bbe4483f8760f998ad64d"
+                "reference": "94f3ddc5d77e49daadadd33b798b933e52dde82c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpDocumentor/TypeResolver/zipball/95d8782070ccd738295bbe4483f8760f998ad64d",
-                "reference": "95d8782070ccd738295bbe4483f8760f998ad64d",
+                "url": "https://api.github.com/repos/phpDocumentor/TypeResolver/zipball/94f3ddc5d77e49daadadd33b798b933e52dde82c",
+                "reference": "94f3ddc5d77e49daadadd33b798b933e52dde82c",
                 "shasum": ""
             },
             "require": {
@@ -1315,7 +1735,7 @@
                 }
             ],
             "description": "A PSR-5 based resolver of Class names, Types and Structural Element Names",
-            "time": "2020-05-13T13:46:15+00:00"
+            "time": "2020-06-19T19:40:27+00:00"
         },
         {
             "name": "phpoption/phpoption",
@@ -1703,12 +2123,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "8eaf8535ac38e0962ce5cfc1dfeaf67c6ba6a648"
+                "reference": "1c95329a1b8adc533d021cd70f4e432783adab0d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/8eaf8535ac38e0962ce5cfc1dfeaf67c6ba6a648",
-                "reference": "8eaf8535ac38e0962ce5cfc1dfeaf67c6ba6a648",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/1c95329a1b8adc533d021cd70f4e432783adab0d",
+                "reference": "1c95329a1b8adc533d021cd70f4e432783adab0d",
                 "shasum": ""
             },
             "require": {
@@ -1788,7 +2208,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-06-17T10:28:33+00:00"
+            "time": "2020-06-20T05:08:13+00:00"
         },
         {
             "name": "psr/container",
@@ -3132,12 +3552,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/event-dispatcher.git",
-                "reference": "8a53fd33b1637494c03565a24cfd195c9a8b2c2d"
+                "reference": "04039530ba77586eaf125de98c63315387190e5b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/8a53fd33b1637494c03565a24cfd195c9a8b2c2d",
-                "reference": "8a53fd33b1637494c03565a24cfd195c9a8b2c2d",
+                "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/04039530ba77586eaf125de98c63315387190e5b",
+                "reference": "04039530ba77586eaf125de98c63315387190e5b",
                 "shasum": ""
             },
             "require": {
@@ -3210,7 +3630,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-05-20T17:44:07+00:00"
+            "time": "2020-06-18T19:55:03+00:00"
         },
         {
             "name": "symfony/event-dispatcher-contracts",
@@ -3357,12 +3777,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/http-foundation.git",
-                "reference": "71294564cb844f11d423f0d4cc292e52c7855269"
+                "reference": "5507da8d971e8688a4b335975e01a1004014b43b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/http-foundation/zipball/71294564cb844f11d423f0d4cc292e52c7855269",
-                "reference": "71294564cb844f11d423f0d4cc292e52c7855269",
+                "url": "https://api.github.com/repos/symfony/http-foundation/zipball/5507da8d971e8688a4b335975e01a1004014b43b",
+                "reference": "5507da8d971e8688a4b335975e01a1004014b43b",
                 "shasum": ""
             },
             "require": {
@@ -3424,7 +3844,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-06-15T12:59:35+00:00"
+            "time": "2020-06-18T19:55:03+00:00"
         },
         {
             "name": "symfony/http-kernel",
@@ -3432,12 +3852,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/http-kernel.git",
-                "reference": "d85e727953142d8ce17dffc2de1a9321ce0a0817"
+                "reference": "3efa9d331044a2c25f827d9433e077927b12b509"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/http-kernel/zipball/d85e727953142d8ce17dffc2de1a9321ce0a0817",
-                "reference": "d85e727953142d8ce17dffc2de1a9321ce0a0817",
+                "url": "https://api.github.com/repos/symfony/http-kernel/zipball/3efa9d331044a2c25f827d9433e077927b12b509",
+                "reference": "3efa9d331044a2c25f827d9433e077927b12b509",
                 "shasum": ""
             },
             "require": {
@@ -3537,7 +3957,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-06-12T08:18:54+00:00"
+            "time": "2020-06-18T19:55:03+00:00"
         },
         {
             "name": "symfony/mime",
@@ -4385,12 +4805,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/routing.git",
-                "reference": "cf4202ab0c571af1bed00bf6c886505808f9af95"
+                "reference": "1f9639f804838e57a61f970fbc3961e2b1fb2499"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/routing/zipball/cf4202ab0c571af1bed00bf6c886505808f9af95",
-                "reference": "cf4202ab0c571af1bed00bf6c886505808f9af95",
+                "url": "https://api.github.com/repos/symfony/routing/zipball/1f9639f804838e57a61f970fbc3961e2b1fb2499",
+                "reference": "1f9639f804838e57a61f970fbc3961e2b1fb2499",
                 "shasum": ""
             },
             "require": {
@@ -4469,7 +4889,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-06-11T21:21:11+00:00"
+            "time": "2020-06-18T19:55:03+00:00"
         },
         {
             "name": "symfony/service-contracts",
@@ -4477,12 +4897,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/service-contracts.git",
-                "reference": "e9a840fa4bad676ca39cb7fab4b1c29c91016887"
+                "reference": "fa63c880563872528523a3fff9c18291194b46ac"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/service-contracts/zipball/e9a840fa4bad676ca39cb7fab4b1c29c91016887",
-                "reference": "e9a840fa4bad676ca39cb7fab4b1c29c91016887",
+                "url": "https://api.github.com/repos/symfony/service-contracts/zipball/fa63c880563872528523a3fff9c18291194b46ac",
+                "reference": "fa63c880563872528523a3fff9c18291194b46ac",
                 "shasum": ""
             },
             "require": {
@@ -4545,7 +4965,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-06-06T08:49:21+00:00"
+            "time": "2020-06-18T19:55:03+00:00"
         },
         {
             "name": "symfony/string",
@@ -4805,12 +5225,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/var-dumper.git",
-                "reference": "83d77c03540bd430f311db331dff239d7f3f2da6"
+                "reference": "5f7653c03fe5599d09968eb76aae51f87a6167de"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/83d77c03540bd430f311db331dff239d7f3f2da6",
-                "reference": "83d77c03540bd430f311db331dff239d7f3f2da6",
+                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/5f7653c03fe5599d09968eb76aae51f87a6167de",
+                "reference": "5f7653c03fe5599d09968eb76aae51f87a6167de",
                 "shasum": ""
             },
             "require": {
@@ -4887,7 +5307,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-05-30T20:38:10+00:00"
+            "time": "2020-06-18T19:55:03+00:00"
         },
         {
             "name": "theseer/tokenizer",
